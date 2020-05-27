@@ -21,7 +21,10 @@ app.get('/sani', (req , res ) => {
 
 app.post('/', (req,res) => {
   console.log(req.body.url)
-  var uri = req.body.url;
+  var str1 = "https"
+  var uri = str1.concat('://',req.body.url)
+  console.log(uri)
+  //var uri = req.body.url;
   var tt = uri.split(/(\/)/);
   var te = tt[4];
   var ht = tt[0];

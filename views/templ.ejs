@@ -1,15 +1,18 @@
 <html>
 
 <style>
-
+body {
+  background-color: lightblue;
+}
 p {
   font-family: verdana;
   font-size: 15px;
 }
 </style>
 
-<p>Entered URL : <b><%- urll %></b> </p>
+<p>Entered URL : <b> <input size="50" type=“text” value=<%- urll %>> </b> </p>
 
-<p>New URL : <b><%= uri %></b> </p>
+<p>New URL : <input size="50" type=“text” value=<%= uri %>></b> </p>
 
 </html>
+

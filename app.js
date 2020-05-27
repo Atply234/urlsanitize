@@ -8,9 +8,13 @@ const port = 8001
 app.set('view engine','ejs')
 
 app.get('/', (req , res ) => {
-
+  
   res.sendFile(__dirname + '/index.html');
-
+  res.set({
+    'Content-Type': 'text/html'
+  });
+  res.cookie('Steal-Me','0xDEAD-BEEF');
+  
 })
 
 app.get('/sani', (req , res ) => {

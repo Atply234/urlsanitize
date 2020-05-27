@@ -34,7 +34,7 @@ app.post('/', (req,res) => {
   tt[4] = ttt;
   console.log(ttt);
   var final = tt.join("");
-  res.render('templ', {uri : final});
+  res.render('templ', {uri : final,urll : req.body.url});
 })
 
 app.listen(port, function() {

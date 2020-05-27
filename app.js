@@ -6,7 +6,6 @@ const app = exp();
 app.use(bodyParser.urlencoded({ extended: true }));
 const port = 8001
 app.set('view engine','ejs')
-
 app.get('/', (req , res ) => {
   
   res.sendFile(__dirname + '/index.html');
@@ -16,9 +15,7 @@ app.get('/', (req , res ) => {
   res.cookie('Steal-Me','0xDEAD-BEEF');
   
 })
-
 app.get('/sani', (req , res ) => {
-
   res.sendFile(__dirname + '/sani.html');
   
 })

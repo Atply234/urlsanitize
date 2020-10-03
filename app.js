@@ -4,7 +4,7 @@ var exp = require("express");
 var bodyParser = require('body-parser');
 const app = exp();
 app.use(bodyParser.urlencoded({ extended: true }));
-const port = 80
+const port = 8080
 app.set('view engine','ejs')
 app.get('/', (req , res ) => {
   

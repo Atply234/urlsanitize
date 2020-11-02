@@ -3,7 +3,7 @@ node {
     
     checkout scm
 
-    stages {
+    
         stage('Build') {
             steps {
                 echo 'Building..'
@@ -19,5 +19,5 @@ node {
                 echo 'Deploying....'
             }
         }
-    }
+    
 }
